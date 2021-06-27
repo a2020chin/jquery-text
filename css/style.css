@@ -1,0 +1,321 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+
+.goTop{
+    position: fixed;
+    right: 3%;
+    bottom: 5%;
+}
+.goTop a{
+    text-decoration: none;
+}
+.wrap{
+    width: 1024px;
+    margin: 0 auto;
+}
+.topbar ul{
+    display: flex;
+    background: #f6f6f6;
+    justify-content: flex-end;
+    padding-right: 12px;
+}
+.topbar a{
+    display: flex;
+    text-decoration: none;
+}
+.topbar a:hover{
+    background: #cccccc;
+}
+.topbar img{
+    width: 16px;
+    height: 16px;
+    display: block;
+}
+.topbar-fb{
+    padding: 1px 8px 0 0;
+    border-right: 2px solid #cccccc;
+    margin: 5px 0;
+}
+.topbar-tw{
+    padding: 6px 0 0 8px;
+}
+.topbar-fb span{
+    margin-left: 3px;
+    color: #4262a0;
+}
+.topbar-tw span{
+    margin-left: 3px;
+    color: #4ab0ff;
+}
+.title{
+    display: flex;
+    justify-content: space-between;
+}
+.title h1 a{
+    display: block;
+    width: 224px;
+    height: 50px;
+    background-image: url(../images/logo.png); 
+    text-indent: 101%;
+    overflow: hidden;
+    white-space: nowrap;
+}
+.nav{
+    display: flex;
+}
+.nav  li  a{
+    display: block;
+    padding: 16px 25px 19px 25px;
+    text-decoration: none;
+    color: #00cb9b;
+    position: relative;
+    overflow: hidden;
+}
+.nav li a:after{
+    content: "";
+    position: absolute;
+    bottom: -1px;
+    left: 0;
+    width: 0%;
+    border-bottom: 5px solid transparent;
+    transition: 0.5s;
+}
+.nav li a:hover:after{
+    width: 100%;
+    border-bottom: 5px solid #00cc99;
+}
+.nav-item{
+    display: none;
+    position: absolute;
+    z-index: 99;
+    background: #fff;
+}  
+
+
+
+.banner{
+    width: 1024px;
+    background: url(../images/banner.png) no-repeat;
+    background-size: cover;
+    padding: 95px 0;
+    display: flex;
+    align-items: center;
+}
+.banner h2{
+    width: 100%;
+    font-size: 38px;
+    line-height: 1.5;
+    color: #fff;
+    background: rgba(0,0,0,0.3);
+    padding-left: 50px;
+}
+
+
+
+.content{
+    display: flex;
+    margin: 0 auto;
+}
+.content-item{
+    width: 300px;
+    margin: 60px 10px 60px 20px;
+    box-shadow: 0px 5px 5px -3px gray;
+}
+.content-item h3{
+    text-align: center;
+    font-weight: bold;
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+.content-item p{
+    padding: 0 18px 18px 25px;
+    line-height: 1.5;
+}
+.jquery p{
+    padding-bottom: 0px;
+}
+.jquery li{
+    list-style-type: disc;
+    padding: 4px 0;
+    margin-left: 41px;
+}
+/* lightbox 設定 */
+.lightboxOverlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 9999;
+    background-color: black;
+    filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=80);
+    opacity: 0.8;
+    display: none;
+}
+  
+
+.compare{
+    display: flex;
+    flex-direction: column;
+}
+.compare-table{
+    justify-content: center;
+    margin: 0px 80px 60px 80px;
+}
+.compare h2{
+    text-align: center;
+    font-size: 25px;
+    font-weight: bold;
+    margin-right: 20px;
+    padding-bottom: 30px;
+}
+.compare-table th,.compare-table td{
+    text-align: left;
+    padding: 10px 80px 10px 20px;
+    border-top: 1px solid #dbdbdb;
+    border-bottom: 1px solid #bdbdbd;
+}
+.compare-table th{
+    background: #f7f7f7;
+    font-weight: bold;
+}
+.text-color-g{
+    color: #00b173;
+}
+
+
+
+.quest{
+    background: linear-gradient(#006749,#029861);
+    background: -webkit-linear-gradient(#006749,#029861);
+}
+.quest h2{
+    text-align: center;
+    font-size: 28px;
+    padding: 38px 0;
+    line-height: 1.5;
+    color: #fff;
+}
+.quest-data{
+    display: flex;
+}
+.quest-ask{
+    resize: none;
+    border: none;
+    width: 460px;
+    height: 245px;
+    margin: 0 40px 30px 20px;
+    border-radius: 5px;
+}
+.quest-info{
+    display: flex;
+    flex-direction: column;
+}
+.quest-info label{
+    color: #fff;
+    margin-bottom: 5px;
+}
+.quest-info input{
+    border: none;
+    width: 460px;
+    height: 30px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+.quest-info button{
+    width: 90px;
+    padding: 8px 0;
+    background: #00cc98;
+    border: none;
+    font-size: 16px;
+    color: #fff;
+    border-radius: 5px;
+    align-self: flex-end;
+    cursor: pointer;
+}
+.quest-info button:hover{
+    background: #11b470;
+}
+
+
+
+
+
+.footer{
+    display: flex;
+    justify-content: space-between;
+    margin: 20px;
+}
+.footer img{
+    display: block;
+    width: 171px;
+    height: 36px;
+}
+.footer li{
+    padding: 5px 0;
+}
+.footer li a{
+    color :#e82f79;
+    text-decoration: none;
+    position: relative;
+    overflow: hidden;
+}
+.footer li a::after{
+    content: "";
+    position: absolute;
+    bottom: -3px;
+    left: 0;
+    width: 0%;
+    border-bottom: 3px solid transparent;
+    transition: 0.5s;
+}
+.footer li a:hover::after{
+    width: 100%;
+    border-bottom: 3px solid #e82f79;
+}
