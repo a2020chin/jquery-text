@@ -6,9 +6,10 @@ $(document).ready(function () {
           },1000);
     });
 
-    $('#nav-item-click').click(function(event){
+    $('.nav li > a').click(function(event){
         event.preventDefault();
-        $('.nav-item').slideToggle();
+        $(this).parent().siblings().find('ul').stop().slideUp();
+        $(this).parent().find('ul').stop().slideToggle();
     })
 
 
